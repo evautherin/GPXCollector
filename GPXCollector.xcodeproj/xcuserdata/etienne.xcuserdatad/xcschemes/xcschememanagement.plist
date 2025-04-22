@@ -9,6 +9,34 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>GPXLiveActivityExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>8F89C5382DB28A600068915E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8FB80C452DB00B45007D4965</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8FB80C522DB00B47007D4965</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8FB80C5C2DB00B47007D4965</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

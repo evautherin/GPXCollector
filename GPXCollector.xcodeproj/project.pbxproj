@@ -6,7 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8F89C50B2DB27C9E0068915E /* SwiftLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 8F89C50A2DB27C9E0068915E /* SwiftLocation */; };
+		8F89C53A2DB28A600068915E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB80C832DB01C71007D4965 /* WidgetKit.framework */; };
+		8F89C53B2DB28A600068915E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB80C852DB01C71007D4965 /* SwiftUI.framework */; };
+		8F89C5482DB28A610068915E /* GPXLiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F89C5392DB28A600068915E /* GPXLiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F89C5512DB28B5A0068915E /* Conceptuelissime in Frameworks */ = {isa = PBXBuildFile; productRef = 8F89C5502DB28B5A0068915E /* Conceptuelissime */; };
+		8F89C5562DB787730068915E /* SwiftLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 8F89C5552DB787730068915E /* SwiftLocation */; };
+		8FB80C722DB00C0A007D4965 /* Conceptuelissime in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB80C712DB00C0A007D4965 /* Conceptuelissime */; };
+		8FB80C752DB00CD1007D4965 /* Conceptuelissime in Frameworks */ = {isa = PBXBuildFile; productRef = 8FB80C742DB00CD1007D4965 /* Conceptuelissime */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		8F89C5462DB28A610068915E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FB80C3E2DB00B45007D4965 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F89C5382DB28A600068915E;
+			remoteInfo = GPXLiveActivityExtension;
+		};
 		8FB80C542DB00B47007D4965 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8FB80C3E2DB00B45007D4965 /* Project object */;
@@ -23,15 +41,78 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8FB80C982DB01C72007D4965 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8F89C5482DB28A610068915E /* GPXLiveActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8F89C5392DB28A600068915E /* GPXLiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GPXLiveActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB80C462DB00B45007D4965 /* GPXCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPXCollector.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB80C532DB00B47007D4965 /* GPXCollectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPXCollectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB80C5D2DB00B47007D4965 /* GPXCollectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPXCollectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB80C832DB01C71007D4965 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		8FB80C852DB01C71007D4965 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8F89C54C2DB28A610068915E /* Exceptions for "GPXLiveActivity" folder in "GPXLiveActivityExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8F89C5382DB28A600068915E /* GPXLiveActivityExtension */;
+		};
+		8F89C54E2DB28A890068915E /* Exceptions for "Shared" folder in "GPXLiveActivityExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ActivityIntents.swift,
+				GPXActivityAttributes.swift,
+				Location2D.swift,
+			);
+			target = 8F89C5382DB28A600068915E /* GPXLiveActivityExtension */;
+		};
+		8FB80C9A2DB01F04007D4965 /* Exceptions for "Shared" folder in "GPXCollector" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ActivityIntents.swift,
+				GPXActivityAttributes.swift,
+				Location2D.swift,
+			);
+			target = 8FB80C452DB00B45007D4965 /* GPXCollector */;
+		};
+		8FB80CA12DB0219A007D4965 /* Exceptions for "GPXCollector" folder in "GPXCollector" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8FB80C452DB00B45007D4965 /* GPXCollector */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		8F89C53C2DB28A600068915E /* GPXLiveActivity */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8F89C54C2DB28A610068915E /* Exceptions for "GPXLiveActivity" folder in "GPXLiveActivityExtension" target */,
+			);
+			path = GPXLiveActivity;
+			sourceTree = "<group>";
+		};
 		8FB80C482DB00B45007D4965 /* GPXCollector */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8FB80CA12DB0219A007D4965 /* Exceptions for "GPXCollector" folder in "GPXCollector" target */,
+			);
 			path = GPXCollector;
 			sourceTree = "<group>";
 		};
@@ -45,13 +126,36 @@
 			path = GPXCollectorUITests;
 			sourceTree = "<group>";
 		};
+		8FB80C992DB01EF0007D4965 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8FB80C9A2DB01F04007D4965 /* Exceptions for "Shared" folder in "GPXCollector" target */,
+				8F89C54E2DB28A890068915E /* Exceptions for "Shared" folder in "GPXLiveActivityExtension" target */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8F89C5362DB28A600068915E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F89C53B2DB28A600068915E /* SwiftUI.framework in Frameworks */,
+				8F89C53A2DB28A600068915E /* WidgetKit.framework in Frameworks */,
+				8F89C5512DB28B5A0068915E /* Conceptuelissime in Frameworks */,
+				8F89C5562DB787730068915E /* SwiftLocation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FB80C432DB00B45007D4965 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FB80C752DB00CD1007D4965 /* Conceptuelissime in Frameworks */,
+				8F89C50B2DB27C9E0068915E /* SwiftLocation in Frameworks */,
+				8FB80C722DB00C0A007D4965 /* Conceptuelissime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +179,12 @@
 		8FB80C3D2DB00B45007D4965 = {
 			isa = PBXGroup;
 			children = (
+				8FB80C992DB01EF0007D4965 /* Shared */,
 				8FB80C482DB00B45007D4965 /* GPXCollector */,
 				8FB80C562DB00B47007D4965 /* GPXCollectorTests */,
 				8FB80C602DB00B47007D4965 /* GPXCollectorUITests */,
+				8F89C53C2DB28A600068915E /* GPXLiveActivity */,
+				8FB80C822DB01C71007D4965 /* Frameworks */,
 				8FB80C472DB00B45007D4965 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,13 +195,47 @@
 				8FB80C462DB00B45007D4965 /* GPXCollector.app */,
 				8FB80C532DB00B47007D4965 /* GPXCollectorTests.xctest */,
 				8FB80C5D2DB00B47007D4965 /* GPXCollectorUITests.xctest */,
+				8F89C5392DB28A600068915E /* GPXLiveActivityExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8FB80C822DB01C71007D4965 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FB80C832DB01C71007D4965 /* WidgetKit.framework */,
+				8FB80C852DB01C71007D4965 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8F89C5382DB28A600068915E /* GPXLiveActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F89C5492DB28A610068915E /* Build configuration list for PBXNativeTarget "GPXLiveActivityExtension" */;
+			buildPhases = (
+				8F89C5352DB28A600068915E /* Sources */,
+				8F89C5362DB28A600068915E /* Frameworks */,
+				8F89C5372DB28A600068915E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8F89C53C2DB28A600068915E /* GPXLiveActivity */,
+			);
+			name = GPXLiveActivityExtension;
+			packageProductDependencies = (
+				8F89C5502DB28B5A0068915E /* Conceptuelissime */,
+				8F89C5552DB787730068915E /* SwiftLocation */,
+			);
+			productName = GPXLiveActivityExtension;
+			productReference = 8F89C5392DB28A600068915E /* GPXLiveActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		8FB80C452DB00B45007D4965 /* GPXCollector */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FB80C672DB00B47007D4965 /* Build configuration list for PBXNativeTarget "GPXCollector" */;
@@ -102,16 +243,21 @@
 				8FB80C422DB00B45007D4965 /* Sources */,
 				8FB80C432DB00B45007D4965 /* Frameworks */,
 				8FB80C442DB00B45007D4965 /* Resources */,
+				8FB80C982DB01C72007D4965 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8F89C5472DB28A610068915E /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				8FB80C482DB00B45007D4965 /* GPXCollector */,
 			);
 			name = GPXCollector;
 			packageProductDependencies = (
+				8FB80C712DB00C0A007D4965 /* Conceptuelissime */,
+				8FB80C742DB00CD1007D4965 /* Conceptuelissime */,
+				8F89C50A2DB27C9E0068915E /* SwiftLocation */,
 			);
 			productName = GPXCollector;
 			productReference = 8FB80C462DB00B45007D4965 /* GPXCollector.app */;
@@ -173,6 +319,9 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
+					8F89C5382DB28A600068915E = {
+						CreatedOnToolsVersion = 16.3;
+					};
 					8FB80C452DB00B45007D4965 = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -195,6 +344,10 @@
 			);
 			mainGroup = 8FB80C3D2DB00B45007D4965;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8FB80C732DB00CD1007D4965 /* XCRemoteSwiftPackageReference "conceptuelissime-swift" */,
+				8F89C5092DB27C9E0068915E /* XCRemoteSwiftPackageReference "SwiftLocation" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8FB80C472DB00B45007D4965 /* Products */;
 			projectDirPath = "";
@@ -203,11 +356,19 @@
 				8FB80C452DB00B45007D4965 /* GPXCollector */,
 				8FB80C522DB00B47007D4965 /* GPXCollectorTests */,
 				8FB80C5C2DB00B47007D4965 /* GPXCollectorUITests */,
+				8F89C5382DB28A600068915E /* GPXLiveActivityExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8F89C5372DB28A600068915E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FB80C442DB00B45007D4965 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +393,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8F89C5352DB28A600068915E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FB80C422DB00B45007D4965 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +424,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8F89C5472DB28A610068915E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F89C5382DB28A600068915E /* GPXLiveActivityExtension */;
+			targetProxy = 8F89C5462DB28A610068915E /* PBXContainerItemProxy */;
+		};
 		8FB80C552DB00B47007D4965 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8FB80C452DB00B45007D4965 /* GPXCollector */;
@@ -269,6 +442,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		8F89C54A2DB28A610068915E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z98NUU2B3L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GPXLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GPXLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.murmurations.GPXCollector.GPXLiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F89C54B2DB28A610068915E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z98NUU2B3L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GPXLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GPXLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.murmurations.GPXCollector.GPXLiveActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		8FB80C652DB00B47007D4965 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -400,6 +627,11 @@
 				DEVELOPMENT_TEAM = Z98NUU2B3L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GPXCollector/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location Always and When In Use Usage Description";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location Always Usage Description";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location When In Use Usage Description";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +660,11 @@
 				DEVELOPMENT_TEAM = Z98NUU2B3L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GPXCollector/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location Always and When In Use Usage Description";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location Always Usage Description";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location When In Use Usage Description";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -521,6 +758,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8F89C5492DB28A610068915E /* Build configuration list for PBXNativeTarget "GPXLiveActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F89C54A2DB28A610068915E /* Debug */,
+				8F89C54B2DB28A610068915E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8FB80C412DB00B45007D4965 /* Build configuration list for PBXProject "GPXCollector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -558,6 +804,52 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F89C5092DB27C9E0068915E /* XCRemoteSwiftPackageReference "SwiftLocation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftLocation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		8FB80C732DB00CD1007D4965 /* XCRemoteSwiftPackageReference "conceptuelissime-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evautherin/conceptuelissime-swift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F89C50A2DB27C9E0068915E /* SwiftLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F89C5092DB27C9E0068915E /* XCRemoteSwiftPackageReference "SwiftLocation" */;
+			productName = SwiftLocation;
+		};
+		8F89C5502DB28B5A0068915E /* Conceptuelissime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FB80C732DB00CD1007D4965 /* XCRemoteSwiftPackageReference "conceptuelissime-swift" */;
+			productName = Conceptuelissime;
+		};
+		8F89C5552DB787730068915E /* SwiftLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F89C5092DB27C9E0068915E /* XCRemoteSwiftPackageReference "SwiftLocation" */;
+			productName = SwiftLocation;
+		};
+		8FB80C712DB00C0A007D4965 /* Conceptuelissime */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Conceptuelissime;
+		};
+		8FB80C742DB00CD1007D4965 /* Conceptuelissime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FB80C732DB00CD1007D4965 /* XCRemoteSwiftPackageReference "conceptuelissime-swift" */;
+			productName = Conceptuelissime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FB80C3E2DB00B45007D4965 /* Project object */;
 }

@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
+import WidgetKit
+
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Button(intent: StartActivityIntent()) { Text("Start GPX Activity") }
+                .padding()
+            Button(intent: StopActivityIntent()) { Text("Stop started activity") }
         }
         .padding()
     }

@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import Conceptuelissime
+
 
 @main
 struct GPXCollectorApp: App {
     var body: some Scene {
-        WindowGroup {
+        ScenePhaseWindowGroup {
             ContentView()
         }
     }
