@@ -24,14 +24,12 @@ struct StartActivityIntent: LiveActivityIntent {
         try await Location().requestPermission(.always)
         #endif
 
-        Task {
-            do {
-                try await ActivityLifeCycle.proceed(GPXActivityAttributes())
-                print("ActivityLifeCycle proceed finished")
-            } catch {
-                print(error.localizedDescription)
-            }
+        do {
+            try ActivityLifeCycle.proceed(GPXActivityAttributes())
+        } catch {
+            print(error.localizedDescription)
         }
+
         return .result()
     }
 }
